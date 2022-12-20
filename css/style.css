@@ -33,7 +33,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 80px 230px 80px;
+  padding: 80px 10px 230px 10px;
 }
 
 .nav img {
@@ -44,9 +44,8 @@ a:hover {
   border: 1px solid var(--ink);
   color: var(--ink);
   background-color: transparent;
-
   border-radius: 20px;
-  width: 110px;
+  width: 140px;
   font-size: 1rem;
   text-align: center;
   padding: 8px;
@@ -59,35 +58,37 @@ a:hover {
 
 .container {
   margin: auto;
+  font-family: 'Poppins';
 }
 
-.content {
+.section1 {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
-  font-family: 'Poppins';
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.content h1 {
+.section1 h1 {
   max-width: 1100px;
   font-family: 'Poppins';
-  font-size: 48px;
+  font-size: 3rem;
   letter-spacing: 0px;
   margin: 0;
 }
 
-.content p {
+.section1 p {
   max-width: 600px;
   font-family: 'Open Sans';
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 1.5;
   margin-bottom: 50px;
 }
 
-.btnGetStart {
+.section1 button {
   cursor: pointer;
   border: 1px solid var(--ink);
   background-color: var(--ink);
@@ -96,15 +97,54 @@ a:hover {
   width: 400px;
   font-size: 2rem;
   text-align: center;
-  padding: 26px;
+  padding: 28px;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-bottom: 100px;
 }
 
-.btnGetStart:hover {
+.section1 button:hover {
   border: 1px solid var(--Light-Pink);
   background-color: var(--Light-Pink);
+}
+
+.section1 img {
+  max-width: 95%;
+  margin-bottom: 40px;
+}
+
+.section2 {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 35px 100px 35px;
+}
+
+.section2 .left,
+.section2 .right {
+  text-align: left;
+}
+
+.section2 .left h1,
+.section2 .right h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 6rem;
+  font-family: 'Open Sans';
+}
+
+.section2 .left p,
+.section2 .right p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Open Sans';
+  color: var(--ink);
+  text-align: center;
 }
 
 .attribution {
