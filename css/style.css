@@ -23,10 +23,6 @@ a:hover {
   transition: 0.3s ease-out;
 }
 
-.alignRight {
-  text-align: right;
-}
-
 .main {
   padding: 0px;
 }
@@ -38,9 +34,6 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 80px 10px 230px 10px;
-}
-
-.nav img {
 }
 
 .nav button {
@@ -149,6 +142,10 @@ a:hover {
   text-align: center;
 }
 
+.feature-with100p {
+  width: 100%;
+}
+
 .feature {
   max-width: 1200px;
   margin: auto;
@@ -174,8 +171,12 @@ a:hover {
   max-width: 98%;
 }
 
-.feature-with100p {
-  width: 100%;
+.feature-left {
+  padding-right: 40px;
+}
+
+.feature-right {
+  text-align: right;
 }
 
 .bgBlue {
@@ -243,6 +244,16 @@ a:hover {
   font-size: 1.5rem;
 }
 
+.socialMain {
+  text-align: left;
+}
+
+.socialMain p {
+  padding: 5px 40px 5px 0;
+  max-width: 320px;
+  font-size: 0.8rem;
+}
+
 .social {
   display: flex;
   justify-content: flex-start;
@@ -271,14 +282,22 @@ a:hover {
 }
 
 .newsletter {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 2;
-  padding-top: 25px;
+  padding-left: 50px;
+}
+
+.newsletter p {
+  max-width: 320px;
+  font-size: 0.8rem;
+  padding-bottom: 30px;
+}
+
+.newsletter-input {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .txtNewsletter {
-  grid-column: 1;
   width: 280px;
   height: 25px;
   border-radius: 5px;
@@ -291,13 +310,12 @@ a:hover {
 }
 
 .btnNewsletter {
-  grid-column: 2;
   cursor: pointer;
   border: 1px solid var(--ink);
   background-color: var(--ink);
   color: white;
   border-radius: 5px;
-  width: 160px;
+  width: 140px;
   font-size: 1rem;
   height: 44px;
   font-weight: 400;
@@ -321,5 +339,161 @@ a:hover {
   column-gap: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .nav {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 30px 80px 30px;
+  }
+
+  .nav img {
+    width: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .nav button {
+    width: 100px;
+    font-size: 0.7rem;
+    padding: 4px;
+  }
+
+  .section1 h1 {
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+  .section1 p {
+    font-size: 0.8rem;
+    max-width: 90%;
+  }
+
+  .section1 button {
+    max-width: 200px;
+    font-size: 0.7rem;
+    padding: 15px;
+  }
+
+  .section2 {
+    max-width: 90%;
+    flex-direction: column;
+    padding: 60px 20px 80px 20px;
+    row-gap: 70px;
+  }
+
+  .section2 .left h1,
+  .section2 .right h1 {
+    font-size: 3.6rem;
+  }
+
+  .section2 .left p,
+  .section2 .right p {
+    font-size: 0.9rem;
+    font-family: 'Open Sans';
+  }
+
+  .section2 img {
+    width: 30px;
+  }
+
+  .feature {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+    padding: 80px 10px 50px 10px;
+    text-align: center;
+  }
+
+  .noreverse {
+    flex-direction: column;
+  }
+
+  .feature h1 {
+    font-size: 1.3rem;
+    padding-top: 50px;
+  }
+
+  .feature p {
+    font-size: 0.8rem;
+  }
+
+  .feature-left {
+    padding-right: 0px;
+  }
+
+  .feature-right {
+    text-align: center;
+  }
+
+  .feature img {
+    width: 80%;
+  }
+
+  .sectionReady {
+    padding: 80px 20px 0px 20px;
+  }
+
+  .sectionReady h1 {
+    width: 90%;
+    font-size: 1.3rem;
+    padding-bottom: 40px;
+  }
+
+  .sectionReady button {
+    max-width: 200px;
+    font-size: 0.7rem;
+    padding: 15px;
+  }
+
+  .socialMain {
+    margin-top: 90px;
+    padding: 0px;
+    text-align: left;
+  }
+
+  .socialMain p {
+    max-width: 100%;
+  }
+
+  .socialMain button {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+  }
+
+  .newsletter {
+    padding-left: 0px;
+    text-align: left;
+  }
+
+  .newsletter p {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .newsletter-input {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .txtNewsletter {
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+
+  .txtAlert {
+    font-size: 0.8rem;
+  }
+
+  .btnNewsletter {
+    margin-top: 10px;
+  }
+
+  .attribution {
+    flex-flow: column;
+  }
 }
