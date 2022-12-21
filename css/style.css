@@ -23,6 +23,10 @@ a:hover {
   transition: 0.3s ease-out;
 }
 
+.alignRight {
+  text-align: right;
+}
+
 .main {
   padding: 0px;
 }
@@ -95,8 +99,6 @@ a:hover {
   color: white;
   border-radius: 40px;
   width: 400px;
-  font-size: 2rem;
-  text-align: center;
   padding: 28px;
   font-size: 18px;
   font-weight: 700;
@@ -145,6 +147,166 @@ a:hover {
   font-family: 'Open Sans';
   color: var(--ink);
   text-align: center;
+}
+
+.feature {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 20px 100px 20px;
+  column-gap: 70px;
+}
+
+.feature h1 {
+  font-size: 2.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: normal;
+}
+
+.feature img {
+  max-width: 98%;
+}
+
+.feature-with100p {
+  width: 100%;
+}
+
+.bgBlue {
+  background-color: var(--Very-Pale-Blue);
+}
+
+.bgCyan {
+  background-color: var(--Very-Dark-Cyan);
+}
+
+.section3 {
+  font-size: 3rem;
+}
+
+.sectionReady {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 120px 20px 70px 20px;
+}
+
+.sectionReady h1 {
+  max-width: 900px;
+  font-family: 'Poppins';
+  font-size: 2.5rem;
+  letter-spacing: 0px;
+  margin: 0;
+  font-size: 2.5rem;
+  padding-bottom: 40px;
+}
+
+.sectionReady button {
+  cursor: pointer;
+  border: 1px solid var(--ink);
+  background-color: var(--ink);
+  color: white;
+  border-radius: 40px;
+  width: 400px;
+  padding: 28px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}
+
+.sectionReady button:hover {
+  border: 1px solid var(--Light-Pink);
+  background-color: var(--Light-Pink);
+}
+
+.bottom {
+  color: var(--Very-Pale-Blue);
+  font-family: 'Open Sans';
+  font-size: 0.85rem;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.bottom h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px 20px 0 0px;
+  gap: 15px;
+}
+
+.social button {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: 0.3s ease-in;
+}
+
+.social button:hover {
+  border-color: hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+  transition: 0.3s ease-out;
+}
+
+.social i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 2;
+  padding-top: 25px;
+}
+
+.txtNewsletter {
+  grid-column: 1;
+  width: 280px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 20px;
+}
+
+.txtAlert {
+  color: red;
+}
+
+.btnNewsletter {
+  grid-column: 2;
+  cursor: pointer;
+  border: 1px solid var(--ink);
+  background-color: var(--ink);
+  color: white;
+  border-radius: 5px;
+  width: 160px;
+  font-size: 1rem;
+  height: 44px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.btnNewsletter:hover {
+  border: 1px solid var(--Light-Pink);
+  background-color: var(--Light-Pink);
 }
 
 .attribution {
